@@ -1,0 +1,22 @@
+*{
+    background-color: blanchedalmond;
+}
+h1
+{
+    text-align: center;
+    margin: 25px;
+    color: red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 2%;
+}
+h3{
+    background-color: grey;
+    border: 3px solid yellow;
+}
+.classp{
+    background-image: url('https://cdn.pixabay.com/photo/2021/11/16/14/20/stones-6801099_1280.jpg');
+    color: white;
+    text-align: center;
+    padding: 5%;
+    margin: 5%;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="">
+        Name: <input type="text" id="name" required ><br> <!--required: used for html validation-->
+        Age: <input type="number"><br>
+        Gender: <input type="radio" name="Gender">Male <input type="radio" name="Gender">Female <br>
+        Qualification: <input type="checkbox">SSLC <input type="checkbox">Plus Two <br>
+        District: <select name="" id="">
+            <option value="">Kannur</option>
+            <option value="">Kozhikode</option>
+        </select><br>
+        Email: <input type="email" pattern="/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/"><br>
+        Password: <input type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"><br>
+        Address: <textarea name="" id="" rows="10" cols="20"></textarea><br>
+        Photo: <input type="file"><br>
+        DOB: <input type="date"><br>
+        Time: <input type="time">
+        <input type="submit"><button>Cancel</button>
+
+    </form>
+</body>
+</html>
