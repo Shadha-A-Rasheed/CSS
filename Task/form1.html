@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th
+        {
+            text-align: left;
+            vertical-align: top;
+        }
+        th, tr, td
+        {
+            padding: 5px;
+            padding-right: 10px;
+        }
+        .addr
+        {
+            margin-bottom: 2%;
+        }
+        .leftspace
+        {
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Online Job Registration Portal</h1>
+    <h4>Register yourself to get new job updates</h4>
+    <form action="">
+        <table>
+            <tr>
+                <th>Full name:</th>
+                <td><input type="text" placeholder="First name" required>  <input type="text" placeholder="Last name" required class="leftspace"></td>
+            </tr>
+            <tr>
+                <th>Address:</th>
+                <td><textarea name="" id="" cols="46" rows="1" placeholder="Street Address" required class="addr" pattern=".{1,25}"></textarea><br>
+                    <textarea name="" id="" cols="46" rows="1" placeholder="Street Address Line 2" required class="addr" pattern=".{1,25}"></textarea><br>
+                    <input type="text" placeholder="City" required class="addr">  <input type="text" placeholder="State" required class="leftspace"><br>
+                    <input type="text" placeholder="Pin Code" required class="addr">  <select name="" id="" required class="leftspace">
+                        <option value="">Country</option>
+                        <option value="">India</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <th>Phone No:</th>
+                <td><input type="text" placeholder="Area Code"> - <input type="text" placeholder="Phone Number"></td>
+            </tr>
+            <tr>
+                <th>Mobile:</th>
+                <td><input type="text" required pattern="\d{10}"></td>
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td><input type="email" placeholder="ex: myname@example.com" required></td>
+            </tr>
+            <tr>
+                <th>Cover Letter:</th>
+                <td><textarea name="" id="" rows="5" cols="50" placeholder="Describe yourself in brief(max. 450 characters)"></textarea></td>
+            </tr>
+            <tr>
+                <th>Resume:</th>
+                <td><input type="file"></td>
+
+            </tr>
+            <tr>
+                <th>Skill Level:</th>
+                <td><select name="" id="">
+                    <option value="">Please select</option>
+                    <option value="">Undergraduate</option>
+                    <option value="">Graduate</option>
+                    <option value="">Post-Graduate</option>
+                    <option value="">Diploma/Technical</option>
+                </select></td>
+            </tr>
+            <tr>
+                <th>Declaration:</th>
+                <td><input type="checkbox">The above information filled by me is true. I aslo accept all the terms and conditions.</td>
+            </tr>
+            <tr style="text-align: center;">
+                <td colspan="2"><input type="submit">  <input type="reset" name="" id="" class="leftspace"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
