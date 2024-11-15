@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // square pattern
+            // var i;
+            // var n = 10
+            // var string = ""
+            // for(let i = 1; i <= n; i++)
+            // {
+            //     for(let j = 1; j <= n; j++)
+            //     {
+            //         string += "*"
+            //     }
+            //     string += "\n"
+            // }
+            // document.write(`<pre>${string}</pre>`);
+
+            // right hand pyramid pattern
+            // var i;
+            // var n = 10
+            // var string = ""
+            // for(let i = 1; i <= n; i++)
+            // {
+            //     for(let j = 1; j <= i; j++)
+            //     {
+            //         string += "*"
+            //     }
+            //     string += "\n"
+            // }
+            // document.write(`<pre>${string}</pre>`);
+
+            // inverted pyramid pattern
+            // var n = 10
+            // var string = ""
+            // for(let i = 0; i < n; i++)
+            // {
+            //     for(let j = 1; j <= n-i; j++)
+            //     {
+            //         string += "*"
+            //     }
+            //     string += "\n"
+            // }
+            // document.write(`<pre>${string}</pre>`);
+
+            // left hand pyramid pattern
+            var n = 10; 
+            var string = ""; 
+
+            for (let i = 1; i <= n; i++) {
+                for (let j = 1; j <= n - i; j++) {
+                    string += " "; // Add spaces
+                }
+                for (let k = 1; k <= i; k++) {
+                    string += "*"; // Add asterisks
+                }
+                string += "\n"; // New line after each row
+            }
+            document.write(`<pre>${string}</pre>`)
+            
+    </script>
+</body>
+</html>

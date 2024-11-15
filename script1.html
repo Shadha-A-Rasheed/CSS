@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter first number: <input type="text" id="demo1"><br>
+    Enter second number: <input type="text" id="demo2"><br>
+    <button onclick="swap()">Swap</button><br>
+    a: <input type="text" id="demo3">
+    b: <input type="text" id="demo4">
+    <p id="demop"></p>
+    <script>
+        function swap()
+        {
+            var a, b
+            a = Number(document.getElementById("demo1").value) 
+            b = Number(document.getElementById("demo2").value) 
+            a = a + b
+            b = a - b
+            a = a - b
+            document.getElementById("demo3").value = a
+            document.getElementById("demo4").value = b
+            document.getElementById("demop").innerHTML = a //To print into a p tag
+        }
+        function swaptemp() //Using a temp variable
+        {
+            var a, b, temp
+            a = Number(document.getElementById("demo1").value) 
+            b = Number(document.getElementById("demo2").value) 
+            temp = a
+            a = b
+            b = temp
+            document.getElementById("demo3").value = a
+            document.getElementById("demo4").value = b
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //spread operator
+        // var obj = {
+        //     a:1, b:2, c:3
+        // }
+        // var obj_new = {
+        //     ...obj
+        // }
+        // console.log(obj)
+        // console.log(obj_new)
+
+        var a = [1,3,5]
+        var b = [...a]
+        console.log(a)
+        console.log(b)
+
+        const arr1 = ['one', 'two']
+        const arr2 = [...arr1, 'three', 'four', 'five']
+        console.log(arr1)
+        console.log(arr2)
+
+        const obj1 = {a:1, b:2, c:3}
+        const obj2 = {d:4, e:5, f:6}
+        const obj3 = {...obj1, ...obj2}
+        console.log(obj3)
+
+        //rest operator
+        let func = function(...agrs){
+            console.log(agrs)
+        }
+        func(3)
+        func(4,5,6)
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Rectangle {
+            constructor(length, breadth) {
+                this.length = length;
+                this.breadth = breadth
+                this.area = this.length*this.breadth
+            }
+            getDetails() {
+                return(`Area is ${this.area}`)
+            }
+        }
+        let area_rect = new Rectangle('5','10')
+
+        console.log(area_rect.getDetails())
+    </script>
+</body>
+</html>

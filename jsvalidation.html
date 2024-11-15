@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        Enter name: <input type="text" id="name_id" onkeyup="clearmsg('sp1')">
+        <span id="sp1" style="color: red;"></span><br>
+        Enter Mobile: <input type="text" id="mobile_id" pattern="[0-9]{10}" onkeyup="clearmsg('sp2')">
+        <span id="sp2" style="color: red;"></span><br>
+        Enter Address: <input type="text" id="add_id" onkeyup="clearmsg('sp3')">
+        <span id="sp3" style="color: red;"></span><br>
+        Enter Email: <input type="text" id="email_id" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" onkeyup="clearmsg('sp4')">
+        <span id="sp4" style="color: red;"></span><br>
+        Enter Password: <input type="text" id="p_id" onkeyup="clearmsg('sp5')">
+        <span id="sp5" style="color: red;"></span><br>
+        <button onclick="return validate()">Submit</button>
+    </form>
+    <script>
+        function validate()
+        {
+            var name = document.getElementById("name_id").value;
+            var mob = document.getElementById("mobile_id").value;
+            var addr = document.getElementById("add_id").value;
+            var email = document.getElementById("email_id").value;
+            var pwd = document.getElementById("p_id").value;
+
+            if(name == "")
+            {
+                document.getElementById("sp1").innerHTML = "Enter name";
+                return false;
+            }
+            if(mob == "")
+            {
+                document.getElementById("sp2").innerHTML = "Enter number";
+                return false;
+            }
+            if(addr == "")
+            {
+                document.getElementById("sp3").innerHTML = "Enter Address";
+                return false;
+            }
+            if(email == "")
+            {
+                document.getElementById("sp4").innerHTML = "Enter mail id";
+                return false;
+            }
+            if(pwd == "")
+            {
+                document.getElementById("sp5").innerHTML = "Enter password";
+                return false;
+            }
+        }
+        
+        function clearmsg(span1)
+            {
+                document.getElementById(span1).innerHTML = "";
+            }
+    </script>
+</body>
+</html>

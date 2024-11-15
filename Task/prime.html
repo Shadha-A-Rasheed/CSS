@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter number: <input type="text" id="num"><br><br>
+    <button onclick="prime()">Prime?!</button><br><br>
+    <p id="prime"></p>
+    <script>
+        function prime()
+        {
+            var num, text, limit
+            num = Number(document.getElementById("num").value)
+            if (num <= 0 || num == 1)
+            {
+                text = num + " is not prime"
+            }
+            else if (num == 2)
+            {
+                text = num + " is prime"
+            }
+            else if (num % 2 == 0)
+            {
+                text = num + " is not prime"
+            }
+            else
+            {
+                limit = Math.sqrt(num)
+                for(let i = 3; i <= limit; i = i+2)
+                {
+                    if(num % i == 0)
+                    {
+                        text = num + " is not prime"
+                    }
+                }
+                text = num + " is prime"
+            }
+            document.getElementById("prime").innerHTML = text
+        }
+    </script>
+</body>
+</html>

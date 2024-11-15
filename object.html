@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var person = {
+            firstName: "Anju",
+            lastName: "K",
+            age: 25,
+            eyeColor: "Blue"
+        }
+        console.log(person);
+
+        const student = {
+            name: "john",
+            age: 15,
+            marks: {
+                maths: 30,
+                science: 50
+            }
+        }
+        console.log(student.marks.maths)
+
+        const person1 = {
+            name: "Anu",
+            age: 20,
+            weight: 45,
+            display: function(){
+                return(`${this.name} aged ${this.age} weighs ${this.weight}gm.`)
+            }
+        }
+        console.log(person1.display())
+    </script>
+</body>
+</html>

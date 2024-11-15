@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter side: <input type="text" id="side"><br><br>
+    <button onclick="squa_area()">Find Area</button><br><br>
+    Area: <span id="squa_area"></span>
+    <script>
+        function squa_area()
+        {
+            var side, area
+            side = Number(document.getElementById("side").value)
+            area = side**2
+            document.getElementById("squa_area").innerHTML = area
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="demo1"><br><br>
+    <button onclick="fruit()">Submit</button><br><br>
+    <p id="demop"></p>
+    <script>
+        function fruit()
+        {
+            var fruit = document.getElementById("demo1").value
+            let text
+            switch(fruit)
+            {
+                case "Banana":
+                    text = "Banana is good";
+                    break;
+                case "Apple":
+                    text = "Apple is good";
+                    break;
+                case "Kiwi":
+                    text = "Kiwi is good";
+                    break;
+                case "Orange":
+                    text = "Orange is good";
+                    break;
+                default:
+                    text = "Not a fruit"
+            }
+            document.getElementById("demop").innerHTML = text
+             
+        }
+    </script>
+</body>
+</html>

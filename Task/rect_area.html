@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter length: <input type="text" id="length"><br><br>
+    Enter breadth: <input type="text" id="breadth"><br><br>
+    <button onclick="rect_area()">Find Area</button><br><br>
+    Area: <span id="rect_area"></span>
+    <script>
+        function rect_area()
+        {
+            var length, breadth, area
+            length = Number(document.getElementById("length").value)
+            breadth = Number(document.getElementById("breadth").value)
+            area = length*breadth
+            document.getElementById("rect_area").innerHTML = area
+        }
+    </script>
+</body>
+</html>

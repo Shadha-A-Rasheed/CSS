@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="demo1"><br><br>
+    <button onclick="grade()">Submit</button><br><br>
+    <p id="demop"></p>
+    <script>
+        function grade()
+        {
+            var mark = document.getElementById("demo1").value
+            if (mark > 100)
+            {
+                document.getElementById("demop").innerHTML = "Please enter a mark less than 100"
+            }
+            else if (mark >= 90 && mark <= 100)
+            {
+                document.getElementById("demop").innerHTML = "Grade A"
+            }
+            else if (mark >= 80)
+            {
+                document.getElementById("demop").innerHTML = "Grade B"
+            }
+            else if (mark >= 70)
+            {
+                document.getElementById("demop").innerHTML = "Grade C"
+            }
+            else if (mark >= 60)
+            {
+                document.getElementById("demop").innerHTML = "Grade D"
+            }
+            else
+            {
+                document.getElementById("demop").innerHTML = "FAIL"
+            }
+        }
+    </script>
+</body>
+</html>

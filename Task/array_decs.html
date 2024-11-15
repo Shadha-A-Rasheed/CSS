@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demop"></p> <br>
+    <p id="demo"></p>
+    <script>
+        var arr1 = ['dog', 'zebra', 'ape', 'deer', 'cow','cat', 'lion'];
+        let temp;
+        for(let i = 0; i < arr1.length-1; i++){
+            for(let j = i+1; j < arr1.length; j++) {
+                if(arr1[j] > arr1[i]){
+                    temp = arr1[j]
+                    arr1[j] = arr1[i]
+                    arr1[i] = temp
+                }
+            }
+            
+        }
+        document.getElementById("demop").innerHTML = arr1
+    </script>
+</body>
+</html>

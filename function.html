@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function with default parameter
+        function sum(x= 3, y =5) {
+            return x+y;
+        }
+        console.log(sum())
+        console.log(sum(2))
+        console.log(sum(2,7))
+
+        let values = [2, 3, 6, 1, 8]
+        // values.forEach(function myFunct(val) {
+        //     console.log("hello ", val)
+            
+        // });
+        
+        //anonymous funtion can be used here as function is not call anywhere
+
+        values.forEach(function (val) {
+            console.log("hello ", val)
+            
+        });
+
+        //anonymous funtion can be called using a variable if needed
+        // const fn3 = function(val) 
+        // {
+        //     console.log("hello ", val)
+        // }
+        // fn3(2)
+
+        //Arrow function: instead of 'function' keyword in anonymous function
+        const fn3 = (val) =>
+        {
+            console.log("hello ", val)
+        }
+        fn3(2)
+    </script>
+</body>
+</html>

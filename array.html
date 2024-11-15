@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demop"></p>
+    <p id="demo"></p>
+    <script>
+        var array1 = ["dog", "cat", "cow","elephant", "goat"];
+        // array1.sort()
+        // array1.reverse()
+        //document.getElementById("demop").innerHTML = array1
+
+        // var len = array1.length
+        // var text =""
+        // for(let i = 0; i < len; i++)
+        // {
+        //     text += array1[i] + "<br>"
+        // }
+        // document.getElementById("demop").innerHTML = text
+
+        //array1.push("bear") //add elements to the last index
+        //array1.pop() //remove elements from the last index
+        //document.getElementById("demop").innerHTML = array1.toString() //converts array to string
+
+        //document.getElementById("demop").innerHTML = array1.join("-") //joins elements in the array by "-"
+
+        // document.getElementById("demop").innerHTML = array1.shift() //remove elements from the 0th index
+        // document.getElementById("demo").innerHTML = array1
+
+        // array1.unshift("deer", "lion") //add elements to the 0th index
+        // document.getElementById("demop").innerHTML = array1
+
+        // array1[1] = "tiger"
+        // document.getElementById("demop").innerHTML =  array1
+
+        // var array2 = ["tiger", "deer", "lion"]
+        // const animals = array1.concat(array2) 
+        // document.getElementById("demop").innerHTML = animals
+
+        //splice() add element into an array
+        // array1.splice(1,2,"lion","tiger")
+        // document.getElementById("demop").innerHTML =  array1
+
+        //slice() create new array without change in source array
+        var array2 = array1.slice(3)
+        document.getElementById("demop").innerHTML =  array2
+
+    </script>
+</body>
+</html>

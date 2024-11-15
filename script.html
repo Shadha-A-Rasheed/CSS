@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="demo1">
+    <input type="text" id="demo2">
+    <button onclick="add()">+</button> <!-- onclick: when button is clicked -->
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+    <input type="text" id="demo3">
+    <!-- <script src="script.js"></script> to link a script defined in another page -->
+    <script>
+        function add()
+        {
+            var a,b,c
+            a = Number(document.getElementById("demo1").value) 
+            b = Number(document.getElementById("demo2").value)
+            c = a + b
+            document.getElementById("demo3").value = c
+        }
+        function sub()
+        {
+            var a,b,c
+            a = Number(document.getElementById("demo1").value) 
+            b = Number(document.getElementById("demo2").value)
+            c = a - b
+            document.getElementById("demo3").value = c
+        }
+        function mul()
+        {
+            var a,b,c
+            a = Number(document.getElementById("demo1").value) 
+            b = Number(document.getElementById("demo2").value)
+            c = a * b
+            document.getElementById("demo3").value = c
+        }
+        function div()
+        {
+            var a,b,c
+            a = Number(document.getElementById("demo1").value) 
+            b = Number(document.getElementById("demo2").value)
+            c = a / b
+            document.getElementById("demo3").value = c
+        }
+    </script>
+</body>
+</html>
